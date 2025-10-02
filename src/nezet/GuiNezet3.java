@@ -2,6 +2,7 @@ package nezet;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JSlider;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -36,6 +37,10 @@ public class GuiNezet3 extends javax.swing.JFrame {
         return txtfKor;
     }
 
+    public JSlider getSldKorBeallit() {
+        return sldKorBeallit;
+    }
+
     //public JTextField getTxtKor() {
     public int korBeker() {
         return Integer.valueOf(txtfKor.getText());
@@ -59,7 +64,7 @@ public class GuiNezet3 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtaMegjegyzes = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
-        jSlider1 = new javax.swing.JSlider();
+        sldKorBeallit = new javax.swing.JSlider();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,7 +107,7 @@ public class GuiNezet3 extends javax.swing.JFrame {
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jLabel3)
                             .addGap(18, 18, 18)
-                            .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(sldKorBeallit, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
                 .addGap(0, 13, Short.MAX_VALUE))
         );
@@ -119,9 +124,9 @@ public class GuiNezet3 extends javax.swing.JFrame {
                     .addComponent(txtfKor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnBeallit))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(sldKorBeallit, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -140,7 +145,7 @@ public class GuiNezet3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSlider jSlider1;
+    private javax.swing.JSlider sldKorBeallit;
     private javax.swing.JTextArea txtaMegjegyzes;
     private javax.swing.JTextField txtfKor;
     // End of variables declaration//GEN-END:variables
