@@ -4,13 +4,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import modell.EmberModell;
-import nezet.GuiNezet2;
+import nezet.GuiNezet3;
 
 public class GuiVezerlo3 {
     private EmberModell modell;
-    private GuiNezet2 nezet;
+    private GuiNezet3 nezet;
 
-    public GuiVezerlo3(EmberModell modell, GuiNezet2 nezet) {
+    public GuiVezerlo3(EmberModell modell, GuiNezet3 nezet) {
         this.modell = modell;
         this.nezet = nezet;
         nezet.setVisible(true);

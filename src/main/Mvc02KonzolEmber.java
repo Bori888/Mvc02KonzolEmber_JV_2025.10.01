@@ -5,10 +5,12 @@ import modell.EmberModell;
 import nezet.CuiNezet;
 import nezet.GuiNezet1;
 import nezet.GuiNezet2;
+import nezet.GuiNezet3;
 import nezet.JopNezet;
 import vezerlo.CuiVezerlo;
 import vezerlo.GuiVezerlo1;
 import vezerlo.GuiVezerlo2;
+import vezerlo.GuiVezerlo3;
 import vezerlo.JopVezerlo;
 
 public class Mvc02KonzolEmber {
@@ -19,7 +21,7 @@ public class Mvc02KonzolEmber {
 
         //EmberModell modell = new EmberModell(nezet.getNev(), nezet.getKor());
         EmberModell modell = new EmberModell();
-        
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 //GuiNezet1 nezet = new GuiNezet1();
@@ -27,13 +29,16 @@ public class Mvc02KonzolEmber {
                 //nezet.setVisible(true);
                 //GuiVezerlo1 vezerlo = new GuiVezerlo1(modell, nezet);
                 //vezerlo.feladat();
-                
-                GuiNezet2 nezet = new GuiNezet2();
-                GuiVezerlo2 vezerlo = new GuiVezerlo2(modell, nezet);
+
+//                GuiNezet2 nezet = new GuiNezet2();
+//                GuiVezerlo2 vezerlo = new GuiVezerlo2(modell, nezet);
+//                vezerlo.feladat();
+                GuiNezet3 nezet = new GuiNezet3();
+                GuiVezerlo3 vezerlo = new GuiVezerlo3(modell, nezet);
                 vezerlo.feladat();
             }
         });
-        
+
         //CuiVezerlo vezerlo = new CuiVezerlo(modell, nezet);
         //JopVezerlo vezerlo = new JopVezerlo(modell, nezet);
         //vezerlo.feladat();
